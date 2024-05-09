@@ -5,13 +5,13 @@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <style>
         .navbar {
-            background-color: #800080;
+            background-color: #800020;
             display: flex;
             align-items: center;
         }
 
         .navbar-brand img {
-            height: 110px;
+            height: 90px;
             width: 110px;
             margin-right: 10px;
         }
@@ -21,7 +21,7 @@
         }
 
         footer {
-            background-color: #800080;
+            background-color: #800020;
             color: white;
             text-align: center;
             padding: 15px;
@@ -52,7 +52,7 @@
 
                 <a class="navbar-brand" href="#">
                    
-                 <img src="~/Image/Logo.png" class="logo">
+                 <img src="https://st2.depositphotos.com/1035649/7783/v/450/depositphotos_77833254-stock-illustration-restaurant-logo.jpg" class="logo">
                 </a>
             </div>
 
@@ -61,9 +61,9 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About Us", "About", "Home")</li>
                     <li>@Html.ActionLink("Categories", "Categories", "Home")</li>
-                    <li>@Html.ActionLink("Library Hours", "Library_Hours", "Home")</li>
+                    <li>@Html.ActionLink("Opening Hours", "Library_Hours", "Home")</li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Library Account <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>@Html.ActionLink("My Account", "My_Library_Account", "Home")</li>
                             <li>@Html.ActionLink("Register", "Register", "Account")</li>
