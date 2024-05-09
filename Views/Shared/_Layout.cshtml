@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .navbar {
+            background-color: #800080;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            height: 110px;
+            width: 110px;
+            margin-right: 10px;
+        }
+
+        .navbar-brand img {
+            margin-top: -44px;
+        }
+
+        footer {
+            background-color: #800080;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+        }
+
+            footer a {
+                color: white;
+                margin-right: 15px;
+            }
+
+        .body-content {
+            margin-top: 70px; /* Adjust based on the height of your navbar */
+            margin-bottom: 70px; /* Adjust based on the height of your footer */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#">
+                   
+                 <img src="~/Image/Logo.png" class="logo">
+                </a>
+            </div>
+
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                    <li>@Html.ActionLink("Categories", "Categories", "Home")</li>
+                    <li>@Html.ActionLink("Library Hours", "Library_Hours", "Home")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Library Account <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("My Account", "My_Library_Account", "Home")</li>
+                            <li>@Html.ActionLink("Register", "Register", "Account")</li>
+                            <li>@Html.ActionLink("Login", "Login", "Account")</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+
+    <footer>
+        <a href="@Url.Action("Contact", "Home")">Contact Us</a>
+        <a href="@Url.Action("Categories", "Home")">Browse Now</a>
+        <a href="#">Support Us</a>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Categories</title>
+    <style>
+        /* Add your custom CSS styles here */
+        .category {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .book {
+            margin-bottom: 20px;
+            float: left;
+            width: 30%; /* Adjust width as needed to fit three books in one row */
+            margin-right: 3%; /* Adjust margin to provide spacing between books */
+        }
+
+            .book:last-child {
+                margin-right: 0; /* Remove margin for the last book in the row */
+            }
+
+        img {
+            max-width: 100%;
+            height: 150px; /* Set a fixed height for all images */
+            width: 100%; /* Ensure images fill the container width */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+        }
+
+        .book-info {
+            text-align: center;
+        }
+
+        .read-now-btn {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Book Categories</h1>
+
+    <!-- Fiction Category -->
+    <div class="category">
+        <h2>Fiction</h2>
+        <div class="book">
+            <img src="~/Image/img3.jpg" alt="Science Fiction">
+            <div class="book-info">
+                <h3>The Time Traveler's Dilemma</h3>
+                <p>An exciting tale of time travel and adventure through different eras.</p>
+                <a href="fiction_book1_read_now.html" class="read-now-btn">Read Now</a>
+            </div>
+        </div>
+        <div class="book">
+            <img src="~/Image/img4.jpeg" alt="Mystery">
+            <div class="book-info">
+                <h3>Quantum Enigma</h3>
+                <p>A mysterious journey into the realms of quantum physics and intrigue.</p>
+                <a href="fiction_book2_read_now.html" class="read-now-btn">Read Now</a>
+            </div>
+        </div>
+        <div class="book">
+            <img src="~/Image/img5.jpeg" alt="Fantasy">
+            <div class="book-info">
+                <h3>Galactic Odyssey</h3>
+                <p>An epic fantasy set in a distant galaxy with magical creatures and heroes.</p>
+                <a href="fiction_book3_read_now.html" class="read-now-btn">Read Now</a>
+            </div>
+        </div>
+        <!-- Add more books as needed -->
+    </div>
+
+    <!-- Non-Fiction Category -->
+    <div class="category">
+        <h2>Non-Fiction</h2>
+        <div class="book">
+            <img src="~/Image/img6.jpeg" alt="History">
+            <div class="book-info">
+                <h3>The History of Everything</h3>
+                <p>A comprehensive exploration of the world's history from ancient times to the present.</p>
+                <a href="non_fiction_book1_read_now.html" class="read-now-btn">Read Now</a>
+            </div>
+        </div>
+        <div class="book">
+            <img src="~/Image/img7.jpeg" alt="Science">
+            <div class="book-info">
+                <h3>The Wonders of Science</h3>
+                <p>Discover the fascinating world of science and its impact on our daily lives.</p>
+                <a href="non_fiction_book2_read_now.html" class="read-now-btn">Read Now</a>
+            </div>
+        </div>
+        <div class="book">
+            <img src="~/Image/img8.jpeg" alt="True Crime">
+            <div class="book-info">
+                <h3>Criminal Minds</h3>
+                <p>Explore gripping true crime stories that will keep you on the edge of your seat.</p>
+                <a href="non_fiction_book3_read_now.html" class="read-now-btn">Read Now</a>
+            </div>
+        </div>
+        <!-- Add more books as needed -->
+    </div>
+
+    <!-- Add more categories as needed -->
+
+</body>
+</html>

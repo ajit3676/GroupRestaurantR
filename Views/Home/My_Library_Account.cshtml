@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "My Library Account";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library Account</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://www.theplaterestaurant.com.au/cdn/shop/files/Spring-Food-Menu-Mobile-Website-Header-Image_1500px.jpg?v=1662344881'); /* Background image URL */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #800080;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .account-details {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .account-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+            .account-info div {
+                width: 48%;
+            }
+
+            .account-info h3 {
+                margin-bottom: 10px;
+                color: #333;
+            }
+
+        .logout-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logout-btn {
+            background-color: #800080;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            .logout-btn:hover {
+                background-color: #4b004b;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Library Account</h1>
+    </header>
+
+    <div class="account-details">
+        <div class="account-info">
+            <div>
+                <h3>User Information</h3>
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> john.doe@example.com</p>
+                <p><strong>Membership Type:</strong> Premium</p>
+            </div>
+            <div>
+                <h3>Contact Information</h3>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Address:</strong> 123 Main St, Cityville</p>
+            </div>
+        </div>
+
+        <div class="logout-section">
+            <form action="@Url.Action("LogOff", "Account")" method="post">
+                <input type="submit" value="LogOff" class="LogOff-btn">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
