@@ -1,33 +1,43 @@
-﻿@{
-    ViewBag.Title = "Library_Hours";
-}
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Hours</title>
+    <title>Restaurant Hours</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://www.theplaterestaurant.com.au/cdn/shop/files/Spring-Food-Menu-Mobile-Website-Header-Image_1500px.jpg?v=1662344881'); /* Background image URL */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
             margin: 0;
             padding: 0;
+            color: #333;
         }
 
-        h1 {
-            color: #333;
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
             text-align: center;
-            padding: 20px 0;
-            background-color: #4CAF50;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        h1 {
+           
+            color: white;
+            text-align: center;
+            padding: 100px 0;
             margin: 0;
         }
 
         table {
+            
             width: 80%;
             margin: 20px auto;
             border-collapse: collapse;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
         }
 
         th, td {
@@ -47,7 +57,9 @@
     </style>
 </head>
 <body>
-    <h1>Library Hours</h1>
+    <header>
+        <h1>Restaurant Hours</h1>
+    </header>
     <table>
         <tr>
             <th>Day</th>
@@ -55,31 +67,31 @@
         </tr>
         <tr>
             <td>Monday</td>
-            <td>9:00 AM - 5:00 PM</td>
+            <td>10:00 AM - 10:00 PM</td>
         </tr>
         <tr>
             <td>Tuesday</td>
-            <td>9:00 AM - 5:00 PM</td>
+            <td>10:00 AM - 10:00 PM</td>
         </tr>
         <tr>
             <td>Wednesday</td>
-            <td>9:00 AM - 5:00 PM</td>
+            <td>10:00 AM - 10:00 PM</td>
         </tr>
         <tr>
             <td>Thursday</td>
-            <td>9:00 AM - 5:00 PM</td>
+            <td>10:00 AM - 10:00 PM</td>
         </tr>
         <tr>
             <td>Friday</td>
-            <td>9:00 AM - 5:00 PM</td>
+            <td>10:00 AM - 11:00 PM</td>
         </tr>
         <tr>
             <td>Saturday</td>
-            <td>10:00 AM - 4:00 PM</td>
+            <td>11:00 AM - 11:00 PM</td>
         </tr>
         <tr>
             <td>Sunday</td>
-            <td>Closed</td>
+            <td>11:00 AM - 9:00 PM</td>
         </tr>
     </table>
 </body>
