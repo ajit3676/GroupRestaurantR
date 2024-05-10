@@ -24,11 +24,15 @@ namespace HamroLibrary
                 defaults: new { controller = "Home", action = "Contact" }
             );
 
-            routes.MapRoute(
+           routes.MapRoute(
                name: "Categories",
                url: "Home/Categories",
                defaults: new { controller = "Home", action = "Categories" }
+
+           
            );
+            
+
 
         }
     }

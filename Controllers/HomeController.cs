@@ -23,7 +23,7 @@ namespace HamroLibrary.Controllers
 
         public ActionResult Library_Hours()
         {
-            ViewBag.Message = "Your application Library Hours page.";
+            ViewBag.Message = "Your application Hours page.";
 
             return View();
         }

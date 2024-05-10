@@ -169,7 +169,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -178,7 +177,6 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Data\ApplicationDbContext.cs" />
-    <Compile Include="Models\Data\Book.cs" />
     <Compile Include="Models\Data\My_Library_Account.cs" />
     <Compile Include="Models\Data\Reservation.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -195,20 +193,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Image\img1.jpg" />
-    <Content Include="Image\img10.jpeg" />
-    <Content Include="Image\img11.jpeg" />
-    <Content Include="Image\img3.jpg" />
-    <Content Include="Image\img4.jpeg" />
-    <Content Include="Image\img5.jpeg" />
-    <Content Include="Image\img6.jpeg" />
-    <Content Include="Image\img7.jpeg" />
-    <Content Include="Image\img8.jpeg" />
-    <Content Include="Image\img9.jpeg" />
-    <Content Include="Image\Logo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Image\img2.webp" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -257,8 +243,6 @@
     <Content Include="Views\Home\Library_Hours.cshtml" />
     <Content Include="Views\Home\My_Library_Account.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Books\Read.cshtml" />
-    <Content Include="Views\Books\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
